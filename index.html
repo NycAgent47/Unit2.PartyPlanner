@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Party Organizer</title>
+  </head>
+  <body>
+    <h1>Party Organizer</h1>
+    <div id="party-list"></div>
+
+    <h2>Add a New Party</h2>
+    <form id="new-party-form">
+      <input
+        type="text"
+        id="name"
+        placeholder="Party Name"
+        autocomplete="name"
+        required
+      />
+      <input type="date" id="date" autocomplete="date" required />
+      <input type="time" id="time" autocomplete="time" required />
+      <input
+        type="text"
+        id="location"
+        placeholder="Location"
+        autocomplete="street-address"
+        required
+      />
+      <textarea
+        id="description"
+        placeholder="Description"
+        autocomplete="off"
+      ></textarea>
+      <button type="submit">Add Party</button>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>
